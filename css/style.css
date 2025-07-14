@@ -1,0 +1,177 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(228, 22, 22);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcccc;
+}
+
+/* Main Section */
+main {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px; /* space for header */
+  text-align: center;
+  color: white;
+}
+
+main img {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+main p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+main input[type="text"] {
+  padding: 12px 20px;
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: relative;
+}
+
+
+main p{
+  font: 40px;
+  image-rendering: auto;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3b2b2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Description Paragraph */
+section > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #555;
+}
+
+/* Features Container */
+.main-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Feature Block */
+.feature {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Headings */
+.feature h3 {
+  color: #e94e1b; /* Highlight color */
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Feature Paragraphs */
+.feature p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive Text Size */
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .feature h3 {
+    font-size: 1.3rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+  }
+}
